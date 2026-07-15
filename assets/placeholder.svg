@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="180" viewBox="0 0 320 180" role="img" aria-label="Storefront placeholder">
+  <rect width="320" height="180" rx="24" fill="#0f172a" />
+  <rect x="24" y="24" width="272" height="132" rx="18" fill="#1e293b" />
+  <rect x="44" y="48" width="96" height="88" rx="14" fill="#38bdf8" />
+  <rect x="154" y="48" width="118" height="16" rx="8" fill="#e2e8f0" />
+  <rect x="154" y="74" width="92" height="12" rx="6" fill="#94a3b8" />
+  <rect x="154" y="100" width="76" height="12" rx="6" fill="#94a3b8" />
+</svg>

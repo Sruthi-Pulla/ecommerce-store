@@ -95,7 +95,7 @@ button:hover { background: #215bda; }
 @media (max-width: 860px) {
   .dashboard { grid-template-columns: 1fr; }
 }
-=======
+
 :root {
   color-scheme: dark;
   font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;

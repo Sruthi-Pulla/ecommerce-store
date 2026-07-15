@@ -10,3 +10,4 @@ I’ve mapped the app around a browser-based storefront with persisted wishlists
 The storefront shell is in place; I’m validating the browser-facing files and the merge flow before I hand it over.
 
 # not able to copy the github copilot chat
+Website link: https://sruthi-pulla.github.io/ecommerce-store/

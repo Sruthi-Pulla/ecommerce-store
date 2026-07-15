@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Northstar Market</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="top-nav" aria-label="Primary navigation">
+        <div class="brand-block">
+          <p class="eyebrow">Curated essentials</p>
+          <h1>Northstar Market</h1>
+        </div>
+        <div class="nav-actions">
+          <label class="sr-only" for="searchInput">Search products</label>
+          <input id="searchInput" type="search" placeholder="Search products" />
+          <button id="wishlistCountBtn" class="nav-pill" type="button">Wishlist</button>
+        </div>
+      </nav>
+      <p class="hero-copy">Browse products, save favorites into wishlists, and merge them into a single collection whenever you want.</p>
+    </header>
+
+    <div id="toastLayer" class="toast-layer" aria-live="polite" aria-atomic="true"></div>
+
+    <main class="dashboard">
+      <section class="products-panel">
+        <div class="panel-header">
+          <h2>Featured products</h2>
+          <p>Each product card includes a title, price, category, description, and a quick action.</p>
+        </div>
+        <div class="filters" aria-label="Category filters">
+          <button class="filter-chip active" data-category="All" type="button">All</button>
+          <button class="filter-chip" data-category="Home" type="button">Home</button>
+          <button class="filter-chip" data-category="Travel" type="button">Travel</button>
+          <button class="filter-chip" data-category="Audio" type="button">Audio</button>
+          <button class="filter-chip" data-category="Fashion" type="button">Fashion</button>
+          <button class="filter-chip" data-category="Tech" type="button">Tech</button>
+        </div>
+        <div id="productGrid" class="product-grid" aria-live="polite"></div>
+      </section>
+
+      <aside class="wishlist-panel">
+        <div class="panel-header">
+          <h2>Wishlists</h2>
+          <p>Your wishlist data is preserved in browser storage and can be merged at any time.</p>
+        </div>
+
+        <div class="wishlist-controls">
+          <label class="field-label" for="wishlistSelect">Active wishlist</label>
+          <select id="wishlistSelect" aria-label="Select the active wishlist"></select>
+
+          <div class="inline-controls">
+            <label class="sr-only" for="wishlistNameInput">New wishlist name</label>
+            <input id="wishlistNameInput" type="text" placeholder="New wishlist name" />
+            <button id="createWishlistBtn" type="button">Create</button>
+          </div>
+
+          <div class="inline-controls secondary-controls">
+            <button id="renameWishlistBtn" type="button">Rename</button>
+            <button id="deleteWishlistBtn" type="button">Delete</button>
+          </div>
+        </div>
+
+        <div class="merge-section">
+          <h3>Merge wishlists</h3>
+          <label class="field-label" for="sourceWishlistSelect">Merge from</label>
+          <select id="sourceWishlistSelect" aria-label="Select a wishlist to merge from"></select>
+
+          <label class="field-label" for="targetWishlistSelect">Merge into</label>
+          <select id="targetWishlistSelect" aria-label="Select a wishlist to merge into"></select>
+
+          <button id="mergeWishlistBtn" type="button">Merge lists</button>
+        </div>
+
+        <div id="wishlistStats" class="wishlist-stats" aria-live="polite"></div>
+        <div id="wishlistStatus" class="status" role="status" aria-live="polite"></div>
+        <div id="activeWishlist" class="wishlist-items"></div>
+      </aside>
+    </main>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
